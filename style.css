@@ -1,0 +1,130 @@
+/* ================================
+   VARIABLES GLOBALES
+================================ */
+:root {
+    /* Couleurs principales */
+    --pb-bg-main: #1DC4FF;
+    --pb-bg-card: #ffffff;
+
+    /* Couleurs texte */
+    --pb-title-color: #4b41de;
+    --pb-text-color: #000000;
+
+    /* Couleurs accents */
+    --pb-check-color: #f5c400;
+    --pb-arrow-color: #4b41de;
+
+    /* Effets */
+    --pb-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   BASE
+================================ */
+.PB-general-background {
+    background-color: var(--pb-bg-main);
+    font-family: Arial, sans-serif;
+    color: var(--pb-text-color);
+    margin: 0;
+}
+
+/* ================================
+   HEADER IMAGE
+================================ */
+.PB-img-header-container {
+    max-width: 850px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.PB-img-header {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ================================
+   CONTENEUR PRINCIPAL
+================================ */
+.PB-general-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--pb-bg-card);
+    box-shadow: var(--pb-shadow);
+    border-radius: 1rem;
+}
+
+/* ================================
+   TITRES
+================================ */
+h1,
+h2,
+h3 {
+    color: var(--pb-title-color);
+    margin-top: 0;
+}
+
+/* ================================
+   LISTE CHECK PRINCIPALE
+================================ */
+.PB-check-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.PB-check-list > li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 12px;
+}
+
+.PB-check-list > li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--pb-check-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ================================
+   SOUS-LISTE
+================================ */
+.PB-sub-list {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.PB-sub-list li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.PB-sub-list li::before {
+    content: "➜";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--pb-arrow-color);
+}
+
+/* ================================
+   LISTE ORDONNÉE ESPACÉE
+================================ */
+.PB-ol-spaced li {
+    margin-bottom: 15px;
+}
+
+/* ================================
+   UTILITAIRES
+================================ */
+.PB-bold-text {
+    font-weight: bold;
+}
