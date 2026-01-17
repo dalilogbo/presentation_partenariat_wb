@@ -12,6 +12,7 @@
 
     /* Couleurs accents */
     --pb-check-color: #f5c400;
+    --pb-icons-color: #f5c400;
     --pb-arrow-color: #4b41de;
 
     /* Effets */
@@ -33,7 +34,7 @@
 ================================ */
 .PB-img-header-container {
     max-width: 850px;
-    margin: 30px auto;
+    margin: 0 auto 30px auto;
     display: flex;
     justify-content: center;
 }
@@ -127,4 +128,12 @@ h3 {
 ================================ */
 .PB-bold-text {
     font-weight: bold;
+}
+
+/* ================================
+   icones FontAwesome
+================================ */
+i.fas {
+  color: var(--pb-icons-color);
+  margin-right: 8px;
 }
